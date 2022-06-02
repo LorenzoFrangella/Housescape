@@ -120,7 +120,7 @@ if (isset($_GET['logout'])){
   <div class="container p-5" id="container_fondo">
     <section class="mb-4">
       <p>
-        <a href="https://github.com/LorenzoFrangella/Progetto_Ltw.git">Link</a> Alla repository GitHub di HousEscape.
+        <a href="https://github.com/LorenzoFrangella/Housescape">Link</a> Alla repository GitHub di HousEscape.
       </p>
     </section>
     <section class="mb-4">

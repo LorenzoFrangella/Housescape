@@ -1,0 +1,407 @@
+body{
+    background-color: #343a40;
+    background-image: url(../img/sfondoprova.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row{
+    border-color: green;
+    border-radius: 10px;
+}
+.col{
+    border-color: green;
+    border-radius: 10px;
+
+}
+
+
+.container{
+    border-color: #343a40;
+    min-height: 365px;
+}
+
+.spaziatura{
+    padding-top: 150px;
+}
+
+.coloreinverso{
+    background-color: #343a40;
+    color: white;
+}
+#inizia_a_giocare{
+    position: relative;
+    z-index:99999;
+}
+#form{
+    border-radius: 10px;
+    height: 64vh;
+    width: 40vw;
+    background-color: white;
+    text-align: center;
+    min-width: 300px;
+    min-height: 370px;
+    text-align: center;
+
+}
+
+.lista_attr{
+    padding-left: 0px!important; 
+}
+
+.lista_attr li{
+    list-style-type: none;
+
+}
+
+@media (min-width: 400px) {
+    .lista_attr li{
+        display: inline;
+    }
+
+    #form{
+        height: 50vh;
+    }
+}
+
+
+#formlogin{
+    border-radius: 10px;
+    height: 40vh;
+    width: 40vw;
+    background-color: white;
+    text-align: center;
+    min-width: 300px;
+
+}
+
+input{
+    width: 49%;
+    padding-top: 8px;
+    margin-top: 10px;
+}
+
+#titolo_registrati{
+    color:#343a40;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#titolo_accedi{
+    color:#343a40;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#reg{
+    position: relative;
+}
+
+#cont_class{
+    margin-top: 10vh;
+    height: 80vh;
+    border-radius: 10px;
+    min-width: 350px;
+}
+
+.error{
+    position: relative;
+    bottom: -15px;
+    color: red;
+}
+#errore_login{
+    position: relative;
+    bottom: 92px;
+    color: red;
+}
+
+#class_title{
+    color:white;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.acti{
+    color: white;
+    transition: width 1s;
+}
+
+.acti:hover {
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #343a40 !important;
+    text-decoration: underline;
+}
+
+h1{
+    position:static;
+    padding-top: 250px;
+    align-items: center;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+h2{
+    color: white;
+}
+h3{
+    font-style: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+h4{
+    color: white;
+}
+h5{
+    color: white;
+}
+h6{
+    color: white;
+}
+.nome{
+    background-color: #ffc107;
+    width: 80px !important;
+    border-radius:5px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding:10px;
+}
+
+#log{
+    margin-top: 34px;
+}
+
+.nomeutente{
+    position:relative;
+    top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .titolo{
+        font-size:50px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .titolo{
+        font-size:75px;
+    }
+}
+
+.home_index{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    z-index: 9999999;
+}
+a{
+    color: #ffc107;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+
+.fondo_nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    padding-left:30px;
+}
+
+.bottone_inizio{
+    text-align: center;
+    height: 13vw;
+    width: 40vw;
+    font-size: 3.5vw;
+}
+.regbtn{
+    position:relative;
+    top: 19px;
+}
+.contatti{
+    position: relative;
+    bottom: -150px;
+}
+#contacts{
+    position: relative;
+    margin-top: 5px;
+    font-size: 18px;
+    bottom: -100px;
+}
+@media (min-width:600px){
+    #contacts{
+        font-size: 22px;
+    }
+    
+}
+@media (max-width:1000px){
+    .contatti{
+        margin-top: 300px;
+    }
+    
+}
+
+.format{
+    border-radius: 10px;
+    height: 70%;
+    width: auto;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+    max-height: 90vh;
+    min-height: 750px;
+}
+
+@media (max-width:600px){
+    .format{
+        min-height: 533px;
+    }
+}
+    
+.inpage{
+    aspect-ratio: 1.77;
+    width: 80%;
+    height: auto;
+    margin-top: 2.5vh;
+}
+
+#avanti{    
+    display: none;
+
+}
+
+#indietro{
+    display: none;
+}
+/*.box_intro{#
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #343a4088;
+}*/
+.intro{
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 4.0vw;
+    font-family:Trebuchet MS, Geneva, Tahoma, sans-serif;
+}
+
+.entra{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#sfondo_intro{
+    background-image: url("../img/Casa-Abbandonata_intro.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#primo_enigma{
+    display:none;
+    margin-top: 15px !important;
+    width:8vw;
+    height:auto;
+}
+#secondo_enigma{
+    display:none;
+    margin-top: 15px !important;
+    width:8vw;
+    height:auto;
+}
+#terzo_enigma{
+    display:none;
+    margin-top: 15px !important;
+    width:8vw;
+    height:auto;
+}
+.bottone_home{
+    margin-top: 50px;
+    text-align: center;
+    height: 110px;
+    width: 300px;
+    font-size: 30px;
+}
+
+table{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #343a40 !important;
+    color: white;
+    border-radius: 15px !important;
+    
+}
+td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+  background-color: #dddddd;
+  color: #000000;
+}
+
+.lista_contatti{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: -20%;
+}
+.lista_contatti li{
+    display: inline-block;
+    width: 33%;
+    margin-top:3%;
+}
+
+@media screen and (max-width: 1200px) {
+    .lista_contatti li{
+        display: inline;
+        margin-top:0%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .lista_contatti li{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .lista_contatti li{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 392px){
+    #fondo_pagina{
+        margin-top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 311px){
+    #fondo_pagina{
+        margin-top: 40%;
+    }
+
+}
+
+#container_fondo{
+    padding-bottom: 0rem !important;
+    min-height: 200px;
+}

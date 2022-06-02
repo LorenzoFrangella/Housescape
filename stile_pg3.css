@@ -1,0 +1,248 @@
+.stanza_3{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-color: aquamarine;
+	filter: brightness(100%);
+}
+.stanza_3 > img{
+		width: 100%;
+		height: auto;
+}
+
+.bg_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-color: aquamarine;
+    border: double;  
+    filter: brightness(100%);
+  }
+
+.foto_mds{
+    position:absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 40%;
+    top: 40%;
+    z-index: 102;
+}  
+
+.foglio{
+    height: 35%;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 20%;
+    z-index: 100;
+    background: white;
+    border-radius: 3px;
+
+}
+
+.campo_scrivibile{
+    width: 70%;
+    z-index: 101;
+    margin-top: 10%;
+}
+
+.popup_macchina_da_scrivere{
+    display: none;
+    position: absolute;
+    top:0;  
+    height: 100vh;
+    width:100vw;
+}
+
+.exit{
+    display: inline;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 5px;
+    top: 15%;
+    right: 10%;
+    width: auto;
+    height: auto;
+    padding: 1vh 1vw;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 2vw;
+    font-weight: 100;
+    line-height: 15px;
+    color: #f7f7f7;
+    background: red;
+    cursor: pointer;
+}
+
+.exit_lucchetto{
+    display: inline;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 5px;
+    top: 15%;
+    right: 40%;
+    width: auto;
+    height: auto;
+    padding: 1vh 1vw;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 2vw;
+    font-weight: 100;
+    line-height: 15px;
+    color: #f7f7f7;
+    background: red;
+    cursor: pointer;
+}
+
+
+.aumenta{
+    cursor:pointer;
+}
+#primo_numero{
+    cursor: default;
+}
+#secondo_numero{
+    cursor: default;
+}
+#terzo_numero{
+    cursor: default;
+}
+.diminuisci{
+    cursor:pointer;
+}
+.lucchetto{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    text-align: center;
+    top:40%;
+
+}
+.rotor{
+    float: left;
+    width: 10%;
+
+}
+
+.elemento_padre{
+    list-style-type: none;
+    display: inline;
+    float: left;
+}
+ul{
+    list-style-type: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inserire_numero{
+    width: 100%;
+    padding-top:20%;
+    padding-bottom:20%;
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+    border:solid;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 3vw;
+}
+
+.bottone_rotore{
+    position: relative;
+    width: 100%;
+    border: solid;
+    border-color: #d6a000;
+    font-size: 3vw;
+    border-radius: 5px;
+    background: #ffc107;
+    z-index:999999;
+}
+
+.bottone_rotore:hover{
+    background: #e8ae00;
+    color: white;
+}
+
+.lucchetto_popup{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    left: 29%;
+    background-image: url(./img/lucchetto.png);
+    background-size: 69%;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 768px) {
+    .bottone_rotore{
+        
+        width: 40px;
+        height: 40px;
+    }
+    .inserire_numero{
+        width: 40px;
+        height: 40px;
+    }
+    .lucchetto{
+        left: -1%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .lucchetto{
+        left: -7%;
+        scale:94%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .bottone_rotore{
+        width: 30px;
+        height: 30px;
+    }
+    .inserire_numero{
+        width: 30px;
+        height: 30px;
+    }
+    .lucchetto{
+        scale: 93%;
+        left:-11%;
+    }
+}
+@media screen and (max-width: 370px) {
+    .lucchetto{
+        left: -20%;
+        scale:75%;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .lucchetto{
+        left: -25%;
+        scale:70%;
+        top:32%;
+    }
+
+}

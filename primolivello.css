@@ -1,0 +1,297 @@
+#primo{
+    overflow: hidden;
+    cursor: url("./img/torcia.png"),auto;
+    background:black;
+	justify-content: center;
+  align-items: center;
+  }
+#secondo{
+    overflow: hidden;
+    background:black;
+	justify-content: center;
+    align-items: center;
+  }
+#terzo{
+	overflow: hidden;
+    background:black;
+	justify-content: center;
+    align-items: center;
+}
+
+
+.bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-color: aquamarine;
+  border: double;  
+  filter: brightness(100%);
+  /*background-image: url("./img/casa_quattro.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+.torch > img{
+	width: 100%;
+  height: auto;
+}
+
+.torch{
+	clip-path: circle(64px at 0 0);
+}
+.sfondo {
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.0;
+}
+.corpo {
+	position: fixed;
+	z-index: 9999;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 60%;
+    background-image:url(/img/pergamena3.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);*/
+	transform: translate(-50%, -50%);
+	cursor: url("./img/lente.png"),auto;
+}
+
+.chiudi {
+	position: absolute;
+	z-index: 9999;
+	top: 65%;
+	right: 42%;
+	width: auto;
+	height: auto;
+	padding: 3vh 3vw;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 2vw;
+	font-weight: 100;
+	line-height: 15px;
+	color: #f7f7f7;
+	background: red;
+	cursor: pointer;
+
+}
+
+.piano{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-color: aquamarine;
+	filter: brightness(100%);
+}
+.piano > img{
+		width: 100%;
+		height: auto;
+}
+.blur{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	-webkit-transition: 0.5s -webkit-filter linear;
+	-o-transition: 0.5s -o-filter linear;
+  }
+
+#close{
+	  display: none;
+	position: absolute;
+	z-index: 9999;
+	border-radius: 5px;
+	top: 5%;
+	right: 10%;
+	width: auto;
+	height: auto;
+	padding: 1vh 1vw;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 2vw;
+	font-weight: 100;
+	line-height: 15px;
+	color: #f7f7f7;
+	background: red;
+	cursor: pointer;
+  }
+
+.exit{
+display: none;
+position: absolute;
+z-index: 9999;
+border-radius: 5px;
+top: 15%;
+right: 10%;
+width: auto;
+height: auto;
+padding: 1vh 1vw;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 2vw;
+font-weight: 100;
+line-height: 15px;
+color: #f7f7f7;
+background: red;
+cursor: pointer;
+}
+
+#progress{
+display: none;
+position: absolute;
+z-index: 9999;
+border-radius: 5px;
+top: 20%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+left:0;
+right: 0;
+width: 5%;
+height: auto;
+padding: 1vh 1vw;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 2vw;
+font-weight: 100;
+line-height: 15px;
+color: #f7f7f7;
+background: red;
+}
+
+.popup_img{
+	position: absolute;
+	display: none;
+	z-index: 9999;
+	top: 20%;	
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+	width: 50px;
+	scale: 50%;
+}
+
+.popup_tastiera{
+	position: absolute;
+	display: none;
+	z-index: 9999;
+	top: 40%;	
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+	scale: 200%;
+}
+.popup_orologio{
+	position: absolute;
+	display: none;
+	z-index: 9999;
+	top: 20%;	
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+	scale: 150%;
+}
+@media (max-width:500px){
+	.popup_orologio{
+		top: 15%;
+		scale:90%;
+	}
+}
+
+.clock{
+	position: absolute;
+	z-index: 9999;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+	top: -10%;
+	text-align: center;
+	scale: 50%;
+	display: none;
+}
+
+.tasto{
+	margin-top: 50px;
+	scale: 150%;
+	size: 10%;
+	margin-left: 8vw;
+	margin-right: 8vw;
+	padding: 5px;
+	font-family: Impact, Charcoal, sans-serif;
+	border-radius: 5px;
+	color:black;
+	
+	border-color: white;
+	font-size:20px;
+}
+@media (max-width:500px){
+	.tasto{
+		scale:140%;
+		font-size: 12px;
+	}
+}
+@media(min-width:768px){
+	.tasto{
+		margin-top: 20%;
+		scale:200%;
+	}
+}
+#orologio{
+	cursor: url("./img/torcia.png"),auto;
+}
+#orologio_fisso{
+	cursor: url("./img/torcia.png"),auto;
+	
+}
+#orario{
+	border-color: yellow;
+	background-color: yellow;
+
+} 
+
+#foto_tastiera{
+	scale:70%;
+	top: 40%;
+	left: 3%;
+	width: 60%;
+	height: 50%;
+}
+
+@media (max-width:400px){
+	.pianoforte{
+		top: 3px; left: 8px;
+	  margin-top: 14%;
+	  scale: 70%;
+	  }
+	  #foto_orologio{
+		  margin-top:-20px;
+		  scale: 50%;
+	  }
+
+	}
+	@media (min-width:401px){
+		.pianoforte{
+		  top:37%;left:22%;
+		}
+	  }
+	  @media (min-width:460px){
+		.pianoforte{
+		  top:37%;left:29%;
+		}
+	  }
+	  @media (min-width:900px){
+		.pianoforte{
+		  top:37%;left:40%;
+		}
+	  }
